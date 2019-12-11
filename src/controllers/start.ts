@@ -9,6 +9,7 @@ export const startController = {
         return ctx.replyWithHTML('Send "PING" message to get "PONG" response or "NEXT" to go to another controller')
     },
 
+    // This function is executed when user sends updates while being on the path
     post: async function (ctx, updateType) {
         if (updateType === hobot.updateTypes.text) {
             const text = ctx.update.message.text;
