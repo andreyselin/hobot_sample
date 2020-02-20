@@ -4,7 +4,7 @@ import { startController } from "./controllers/start";
 import { nextController } from "./controllers/next";
 
 // Paste your token here
-const token = '566877871:AAFPkKg8ii0Q8PZIYB9GUWd5JfkwKaRssyQ';
+const token = 'YOUR_TOKEN';
 const bot = new Telegraf(token);
 
 // Wrapping bot with hobot
@@ -15,7 +15,6 @@ export const hobot = new Hobot(bot, {
         { command: 'start', path: 'path_start' }
         // You can also add other commands in this array
     ],
-
     // Add here controllers you want to work with:
     controllers: [
         startController,

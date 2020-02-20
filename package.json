@@ -1,16 +1,14 @@
 {
-  "name": "tmp",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "name": "hobot_sample",
+  "version": "1.0.1",
+  "description": "Hobot framework playground",
   "scripts": {
     "start": "nodemon -L --watch 'src/**/*.ts' --exec 'ts-node' src/index.ts",
-    "build": "rm -rf dist && tsc -p . --lib es2017 --outDir dist",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "rm -rf dist && tsc -p . --lib es2017 --outDir dist"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "hobot": "0.0.2"
+    "hobot": "0.0.4"
   }
 }
